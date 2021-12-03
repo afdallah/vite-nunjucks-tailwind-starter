@@ -1,0 +1,10 @@
+{% extends "src/html/layout/base.html" %}
+{% include "src/html/partials/hello.html"  %}
+
+{% block content %}
+    {% if username %}
+        Username: {{ username }}
+    {% else %}
+        Variable <code>username</code> is missing
+    {% endif %}
+{% endblock %}
